@@ -42,8 +42,8 @@ Einige Beispiele, die in diesem Repository behandelt werden:
 
 ## Referenzen
 
-GNU Bash-Referenzhandbuch: https://www.gnu.org/software/bash/manual/bash.html
-Advanced Bash-Scripting Guide: https://tldp.org/LDP/abs/html/
+1. GNU Bash-Referenzhandbuch: https://www.gnu.org/software/bash/manual/bash.html
+2. Advanced Bash-Scripting Guide: https://tldp.org/LDP/abs/html/
 
 
 ## ListeVonLinuxBefehle

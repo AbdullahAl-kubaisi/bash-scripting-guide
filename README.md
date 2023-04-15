@@ -11,10 +11,10 @@ Ein umfassendes Repository zur Vermittlung von Bash-Scripting-Grundlagen, besten
 1. [Einleitung](#einleitung)
 2. [Voraussetzungen](#voraussetzungen)
 3. [Installation](#installation)
-4. [ListeVonLinuxBefehle](#Ultimative Liste der Linux-Bash-Befehle)
+4. [ListeVonLinuxBefehle](#ListeVonLinuxBefehle)
+5. [Quickcheatsheet](#Quick cheat sheet)
 5. [Beispiele](#beispiele)
 6. [Referenzen](#referenzen)
-7. [Lizenz](#lizenz)
 
 ## Einleitung
 
@@ -31,7 +31,7 @@ Um dieses Repository zu klonen und die Beispiele lokal auszuführen, führen Sie
 1. git clone https://github.com/AbdullahAl-kubaisi/bash-scripting-guide.git
 2. cd bash-scripting-guide
 
-## Ultimative Liste der Linux-Bash-Befehle
+## ListeVonLinuxBefehle
 
 
 _Bash (Bourne-Again SHell) ist eine [Unix-Shell](https://www.google.com/search?q=What+is+UNIX+explain%3F&client=firefox-b-d&sxsrf=ALiCzsZmYtgn9ctD5vHAqgVFkM5tZ514pw%3A1667926333803&ei=PYlqY6XIMNmNwbkPqeK3qAo&ved=0ahUKEwjl2ozlhZ_7AhXZRjABHSnxDaUQ4dUDCA4&uact=5&oq=What+is+UNIX+explain%3F&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIFCAAQhgMyBQgAEIYDMgUIABCGAzIFCAAQhgM6CggAEEcQ1gQQsAM6BwgAELADEENKBAhNGAFKBAhBGABKBAhGGABQnAFYnAFgvwNoAXABeACAAa0BiAGtAZIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz-serp) und eine Befehlszeilen-Interpreter für das GNU-Betriebssystem. Es wurde von Brian Fox für das GNU-Projekt als freie Ersatzsoftware für die Bourne-Shell (sh) entwickelt und wird als Standard-Shell für viele Linux- und Unix-Distributionen verwendet. Bash ermöglicht es Benutzern, Befehle zur Steuerung und Verwaltung von Betriebssystemen und Software-Anwendungen direkt über die Befehlszeile einzugeben._
@@ -3135,3 +3135,118 @@ _Bash (Bourne-Again SHell) ist eine [Unix-Shell](https://www.google.com/search?q
 </tr>
 </tbody>
 </table>
+
+
+<details><summary><h3>Quick cheat sheet 📝</h3></summary>
+<p>
+  
+>**Warning**<br>
+>  Examples like `-a|--all` option flags means, single `-` used for _short_ option(-a) **or**|  double `--` used for _long_ option(--all). Both was added for educational purpose.
+
+### Contents
+- [Command Information](#command-information)
+- [Command History](#command-history)
+- [Navigating Directories](#navigating-directories)
+- [Creating Directories](#creating-directories)
+- [Moving Directories](#moving-directories)
+- [Deleting Directories](#deleting-directories)
+#
+  
+## Command Information
+
+```bash
+man chmod                   # Display page manual of a command
+man -f|--whatis chmod       # Display short description about a command
+man -k|--apropos permission # Display all related commands from a specific keyword
+
+chmod --help                # Display usage options of a command
+```
+[⬆ ʀᴇᴛᴜʀɴ ᴛᴏ ᴄᴏɴᴛᴇɴᴛꜱ](#contents)
+
+## Command History
+
+```bash
+history                                # View all previous commands
+history | grep foo                     # View the commands using a specific word
+history | grep -E|--extended-regexp -i|--ignore-case 'foo1|foo2|foo3' # View the commands using more than 1 specific word(case sensitive)
+history | head -n|--lines 3            # View the first 3 executed commands
+history 3                              # View the last 3 executed commands
+history -d 99                          # Clear a command from a specific line 
+history -c                             # Clears all history commands
+!!                                     # Run the last command executed
+
+touch foo.sh                           # <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<┐
+chmod +x !$                            # !$ is the last argument of the last command i.e. foo.sh <<<<┘
+```
+[⬆ ʀᴇᴛᴜʀɴ ᴛᴏ ᴄᴏɴᴛᴇɴᴛꜱ](#contents)
+
+## Navigating Directories
+
+```bash
+pwd                       # Print current directory path
+ls                        # List directories
+ls -a|--all               # List directories including hidden
+ls -l                     # List directories in long form
+ls -l -h|--human-readable # List directories in long form with human readable sizes
+ls -t                     # List directories by modification time, newest first
+stat foo.txt              # List size, created and modified timestamps for a file
+stat foo                  # List size, created and modified timestamps for a directory
+tree                      # List directory and file tree
+tree -a                   # List directory and file tree including hidden
+tree -d                   # List directory tree
+
+cd foo                    # Go to foo sub-directory
+cd                        # Go to home directory
+cd ~                      # Go to home directory
+cd -                      # Go to the previously chosen directory
+pushd foo                 # Go to foo sub-directory and add previous directory to stack
+popd                      # Go back to directory in stack saved by `pushd`
+```
+[⬆ ʀᴇᴛᴜʀɴ ᴛᴏ ᴄᴏɴᴛᴇɴᴛꜱ](#contents)
+
+## Creating Directories 
+  
+```bash
+mkdir foo                        # Create a directory
+mkdir foo bar                    # Create multiple directories
+mkdir -p|--parents foo/bar       # Create nested directory
+mkdir -p|--parents {foo,bar}/baz # Create multiple nested directories
+
+mktemp -d|--directory            # Create a temporary directory
+```
+[⬆ ʀᴇᴛᴜʀɴ ᴛᴏ ᴄᴏɴᴛᴇɴᴛꜱ](#contents)
+
+## Moving Directories
+
+```bash
+cp -R|--recursive foo bar                              # Copy directory
+mv foo bar                                             # Move directory
+
+rsync -z|--compress -v|--verbose /foo /bar             # Copy directory, overwrites destination
+rsync --ignore-existing -a|--archive-a|--archive -z|--compress -v|--verbose /foo /bar # Copy directory, without overwriting destination
+rsync -avz /foo username@hostname:/bar                 # Copy local directory to remote directory
+rsync -avz username@hostname:/foo /bar                 # Copy remote directory to local directory
+```
+[⬆ ʀᴇᴛᴜʀɴ ᴛᴏ ᴄᴏɴᴛᴇɴᴛꜱ](#contents)
+
+## Deleting Directories
+
+```bash
+rmdir foo                        # Delete non-empty directory
+rm -r|--recursive foo            # Delete directory including contents
+rm -r|--recursive -f|--force foo # Delete directory including contents, ignore nonexistent files and never prompt
+```
+[⬆ ʀᴇᴛᴜʀɴ ᴛᴏ ᴄᴏɴᴛᴇɴᴛꜱ](#contents)
+
+## Beispiele
+Einige Beispiele, die in diesem Repository behandelt werden:
+
+1. Einfache Bash-Scripts erstellen und ausführen
+2. Variablen und Kontrollstrukturen verwenden
+3. Dateien und Verzeichnisse verwalten
+4. Textverarbeitung und reguläre Ausdrücke
+5. Funktionen und wiederverwendbare Codeblöcke erstellen
+
+## Referenzen
+GNU Bash-Referenzhandbuch: https://www.gnu.org/software/bash/manual/bash.html
+Advanced Bash-Scripting Guide: https://tldp.org/LDP/abs/html/

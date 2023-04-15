@@ -28,11 +28,10 @@ Um dieses Repository und die bereitgestellten Beispiele optimal nutzen zu könne
 
 Um dieses Repository zu klonen und die Beispiele lokal auszuführen, führen Sie die folgenden Befehle aus:
 
-```bash
 git clone https://github.com/your_username/bash-scripting-guide.git
 cd bash-scripting-guide
 
-# Ultimative Liste der Linux-Bash-Befehle
+## Ultimative Liste der Linux-Bash-Befehle
 
 
 _Bash (Bourne-Again SHell) ist eine [Unix-Shell](https://www.google.com/search?q=What+is+UNIX+explain%3F&client=firefox-b-d&sxsrf=ALiCzsZmYtgn9ctD5vHAqgVFkM5tZ514pw%3A1667926333803&ei=PYlqY6XIMNmNwbkPqeK3qAo&ved=0ahUKEwjl2ozlhZ_7AhXZRjABHSnxDaUQ4dUDCA4&uact=5&oq=What+is+UNIX+explain%3F&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIFCAAQhgMyBQgAEIYDMgUIABCGAzIFCAAQhgM6CggAEEcQ1gQQsAM6BwgAELADEENKBAhNGAFKBAhBGABKBAhGGABQnAFYnAFgvwNoAXABeACAAa0BiAGtAZIBAzAuMZgBAKABAqABAcgBCsABAQ&sclient=gws-wiz-serp) und eine Befehlszeilen-Interpreter für das GNU-Betriebssystem. Es wurde von Brian Fox für das GNU-Projekt als freie Ersatzsoftware für die Bourne-Shell (sh) entwickelt und wird als Standard-Shell für viele Linux- und Unix-Distributionen verwendet. Bash ermöglicht es Benutzern, Befehle zur Steuerung und Verwaltung von Betriebssystemen und Software-Anwendungen direkt über die Befehlszeile einzugeben._

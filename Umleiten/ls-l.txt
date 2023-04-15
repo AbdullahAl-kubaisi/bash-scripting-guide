@@ -1,0 +1,19 @@
+total 1
+-rw-r--r-- 1 TAAALAB2 1049089 4 Mrz 16 14:17 file1.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file2.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file3.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file4.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file5.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file6.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file7.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file8.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 file9.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:19 ls-l.txt
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test1.sh
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test2.sh
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test3.sh
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test4.sh
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test5.sh
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test6.sh
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test7.sh
+-rw-r--r-- 1 TAAALAB2 1049089 0 Mrz 16 14:06 test8.sh

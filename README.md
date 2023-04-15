@@ -11,7 +11,7 @@ Ein umfassendes Repository zur Vermittlung von Bash-Scripting-Grundlagen, besten
 1. [Einleitung](#einleitung)
 2. [Voraussetzungen](#voraussetzungen)
 3. [Installation](#installation)
-4. [ListeVonLinux-Bash-Befehle](#Ultimative Liste der Linux-Bash-Befehle)
+4. [ListeVonLinuxBefehle](#Ultimative Liste der Linux-Bash-Befehle)
 5. [Beispiele](#beispiele)
 6. [Referenzen](#referenzen)
 7. [Lizenz](#lizenz)
@@ -28,8 +28,8 @@ Um dieses Repository und die bereitgestellten Beispiele optimal nutzen zu könne
 
 Um dieses Repository zu klonen und die Beispiele lokal auszuführen, führen Sie die folgenden Befehle aus:
 
-git clone https://github.com/your_username/bash-scripting-guide.git
-cd bash-scripting-guide
+1. git clone https://github.com/AbdullahAl-kubaisi/bash-scripting-guide.git
+2. cd bash-scripting-guide
 
 ## Ultimative Liste der Linux-Bash-Befehle
 
